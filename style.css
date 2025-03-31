@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 40px 0px 30px 0px;
+}
+
+body{
+    background-color: rgb(89, 89, 239);
+}
+
+.box, form{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+width: 250px;
+height: 25px;
+border-radius: 30px;
+padding: 0px 15px 0px 15px;
+}
+
+button{
+   width: 150px; 
+   height: 25px;
+   border-radius: 20px;
+}
