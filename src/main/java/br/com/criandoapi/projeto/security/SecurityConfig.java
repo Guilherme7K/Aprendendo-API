@@ -17,10 +17,11 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.GET, "/usuarios").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/usuarios/login").permitAll()
                         .anyRequest().authenticated()
                 )
-                .cors(cors -> {})
+                .cors(cors -> {
+                })
                 .addFilterBefore(new SecurityFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
